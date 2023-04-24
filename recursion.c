@@ -1,15 +1,17 @@
 #include<stdio.h>
-void printHW(int count){
-    if (count==0)
+
+int sum(int num){
+    if (num==1)
     {
-        return ;
+        return 1;
     }
     
-    printf("hello world\n");
-    printHW(count-1);
+    int sumNM1=sum(num-1);
+    int sumNM=sumNM1+num;
+    
 }
 int main(){
-    printHW(3);
+    printf("sum is :=%d",sum(10));
     return 0;
-    
+
 }
