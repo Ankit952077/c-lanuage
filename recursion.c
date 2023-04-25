@@ -1,17 +1,12 @@
 #include<stdio.h>
-int fact(int num){
-      if (num==0)
-    {
-        return 1;
 
-    }
-    int factNM1=fact(num-1);
-    int factNM=factNM1*num;
-  
-    
+float convertotemp( float clesius){
+    float far=clesius*(9.0/5.0)+32;
+    return far;
 }
 int main(){
-    printf("factorial is :=%d\n",fact(5));
+    
+    printf("far is %f",convertotemp(37));
     return 0;
 
 }
