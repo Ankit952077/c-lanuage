@@ -1,12 +1,21 @@
 #include<stdio.h>
-int calculateper(int hindi,int science,int art){
-    return (hindi+science+art)/3;
+
+int fib(int num){
+
+if (num==0)
+{
+   return 0;
+}
+if (num==1)
+{
+    return 1;
+}
+int fibNM1=fib(num-1);
+int fibNM2=fib(num-2);
+int fibNM=fibNM1+fibNM2;
 }
 int main(){
-    int hi=98;
-    int ar=90;
-    int sci=98;
-    printf(" percent is :=%d",calculateper(hi,ar,sci));
+    printf("fibnocci num is=:%d",fib(6));
     return 0;
-
+    
 }
