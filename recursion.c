@@ -1,12 +1,12 @@
 #include<stdio.h>
-
-float convertotemp( float clesius){
-    float far=clesius*(9.0/5.0)+32;
-    return far;
+int calculateper(int hindi,int science,int art){
+    return (hindi+science+art)/3;
 }
 int main(){
-    
-    printf("far is %f",convertotemp(37));
+    int hi=98;
+    int ar=90;
+    int sci=98;
+    printf(" percent is :=%d",calculateper(hi,ar,sci));
     return 0;
 
 }
