@@ -7,10 +7,10 @@ void printstring( char array[]){
     printf("\n");
 }
 int main(){
-    char fristname[]="Ankit";
-    char lastname[]="Baghel";
-
-    printstring(fristname);
-    printstring(lastname);
-    return 0;
+    char name[50];
+    scanf("%s",name);
+    printf("your name is :=%s",name);
+    
+    
+        return 0;
 }
